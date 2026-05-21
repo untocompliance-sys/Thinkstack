@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ThinkStack</title>
+
+  <!-- Ad Script -->
+  <script src="https://quge5.com/88/tag.min.js" data-zone="241765" async data-cfasync="false"></script>
+
   <style>
     * {
       margin: 0;
@@ -35,6 +39,165 @@
     }
 
     nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    .hero {
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(to right, #0f172a, #1e293b);
+    }
+
+    .hero h1 {
+      font-size: 60px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 700px;
+      margin-bottom: 30px;
+      color: #cbd5e1;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      background: #38bdf8;
+      color: #0f172a;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #0ea5e9;
+      transform: scale(1.05);
+    }
+
+    .features {
+      padding: 80px 50px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 30px;
+      border-radius: 15px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      background: #334155;
+    }
+
+    .card h3 {
+      margin-bottom: 15px;
+      color: #38bdf8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #111827;
+      margin-top: 40px;
+      color: #94a3b8;
+    }
+
+    @media(max-width: 768px) {
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      header {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">ThinkStack</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#features">Features</a>
+      <a href="#posts">Posts</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h1>Welcome to ThinkStack</h1>
+
+    <p>
+      A platform where ideas, creativity, and knowledge come together.
+      Share your thoughts, publish articles, and inspire the world.
+    </p>
+
+    <a href="post.html" class="btn">Create a Post</a>
+  </section>
+
+  <section class="features" id="features">
+
+    <div class="card">
+      <h3>Share Ideas</h3>
+      <p>
+        Write and publish articles that inspire and educate people around the world.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Build Community</h3>
+      <p>
+        Connect with readers, creators, and thinkers who love innovation and learning.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Grow Your Brand</h3>
+      <p>
+        Use ThinkStack as your personal platform to showcase your knowledge and creativity.
+      </p>
+    </div>
+
+  </section>
+
+  <section class="hero" id="posts" style="height: 60vh;">
+    <h1>Start Posting Today</h1>
+
+    <p>
+      Click the button below to go to the posting page and start sharing your content.
+    </p>
+
+    <a href="post.html" class="btn">Go to Post Page</a>
+  </section>
+
+  <footer id="contact">
+    <p>© 2026 ThinkStack. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>    nav a {
       color: white;
       text-decoration: none;
       margin-left: 20px;
